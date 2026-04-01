@@ -1,14 +1,14 @@
 cask "devhub" do
-  version "1.9.1"
+  version "1.9.3"
 
   on_arm do
     url "https://github.com/hubdev-io/devhub-go/releases/download/v#{version}/DevHub-arm64.dmg"
-    sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
+    sha256 "24c68d7a7cedd4d761e1ff9f586fa4cef909e2bcc1db2fab7041b5fe08906080"
   end
 
   on_intel do
     url "https://github.com/hubdev-io/devhub-go/releases/download/v#{version}/DevHub-amd64.dmg"
-    sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
+    sha256 "fc65af867084a6a0f6ef861cc846159ea01e990826f5a81c3f3ec4b132a7ecaf"
   end
 
   name "DevHub"
