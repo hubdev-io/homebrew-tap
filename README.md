@@ -5,7 +5,7 @@ Official Homebrew tap for [DevHub](https://hubdev.io) — Hybrid Development Env
 ## Installation
 
 ```bash
-brew tap hubdev-io/hubdev-io-homebrew-tap
+brew tap hubdev-io/tap
 brew install --cask devhub
 ```
 
