@@ -1,14 +1,14 @@
 cask "devhub" do
-  version "1.9.3"
+  version "1.9.8"
 
   on_arm do
     url "https://pub-51b22bf3fd5a4d73a4ed580105cfc09f.r2.dev/v#{version}/DevHub-macos-arm64.dmg"
-    sha256 "24c68d7a7cedd4d761e1ff9f586fa4cef909e2bcc1db2fab7041b5fe08906080"
+    sha256 "a472f3cfb4cb686961f66e8604aed1e00237774461a342f265805329bd13603c"
   end
 
   on_intel do
     url "https://pub-51b22bf3fd5a4d73a4ed580105cfc09f.r2.dev/v#{version}/DevHub-macos-amd64.dmg"
-    sha256 "fc65af867084a6a0f6ef861cc846159ea01e990826f5a81c3f3ec4b132a7ecaf"
+    sha256 "e83cc5313c93cbda87f8aac28af61097305f6f26d28a592b53b2a5d8fe4c4a78"
   end
 
   name "DevHub"
