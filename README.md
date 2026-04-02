@@ -1,22 +1,22 @@
-# DevHub Homebrew Tap
+# HubDev Homebrew Tap
 
-Official Homebrew tap for [DevHub](https://hubdev.io) — Hybrid Development Environment Manager.
+Official Homebrew tap for [HubDev](https://hubdev.io) — Hybrid Development Environment Manager.
 
 ## Installation
 
 ```bash
 brew tap hubdev-io/tap
-brew install --cask devhub
+brew install --cask hubdev
 ```
 
 ## Update
 
 ```bash
-brew upgrade --cask devhub
+brew upgrade --cask hubdev
 ```
 
 ## Uninstall
 
 ```bash
-brew uninstall --cask devhub
+brew uninstall --cask hubdev
 ```
