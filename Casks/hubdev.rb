@@ -15,11 +15,22 @@ cask "hubdev" do
   desc "Hybrid Development Environment Manager — manage local dev services with a native GUI"
   homepage "https://hubdev.io"
 
+  livecheck do
+    url "https://github.com/hubdev-io/devhub/releases/latest"
+    strategy :header_match
+  end
+
+  auto_updates true
+  depends_on macos: ">= :catalina"
+
   app "hubdev.app"
+
+  uninstall quit: "com.wails.devhub"
 
   zap trash: [
     "~/.local/share/hubdev",
     "~/Library/Application Support/hubdev",
     "~/Library/Preferences/io.hubdev.plist",
+    "~/Library/Caches/hubdev",
   ]
 end
