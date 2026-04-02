@@ -1,14 +1,14 @@
 cask "hubdev" do
-  version "1.9.36"
+  version "1.9.37"
 
   on_arm do
     url "https://pub-51b22bf3fd5a4d73a4ed580105cfc09f.r2.dev/v#{version}/HubDev-macos-arm64.dmg"
-    sha256 "6cb448c642c3645f6f924d63e483ad488cfccb35f8e7f6fad96d9af5c209d7a2"
+    sha256 "7109bff4a69337b24584897de19c3521419fbec24df447e7191f114005bfe4a4"
   end
 
   on_intel do
     url "https://pub-51b22bf3fd5a4d73a4ed580105cfc09f.r2.dev/v#{version}/HubDev-macos-amd64.dmg"
-    sha256 "ec94b1ecb9677c2696d9fa71ce3bd215699b21307087dcaa0f4695a43b11577b"
+    sha256 "a09441625ae4b4354df28756b72f8895113b701c0de8b23a3fb448b34089e8a6"
   end
 
   name "HubDev"
