@@ -1,14 +1,14 @@
 cask "hubdev" do
-  version "1.18.0"
+  version "1.19.0"
 
   on_arm do
     url "https://pub-51b22bf3fd5a4d73a4ed580105cfc09f.r2.dev/v#{version}/HubDev-macos-arm64.dmg"
-    sha256 "4d523941cd058b28119418d571e1371568d062051eb46f84f667f9869de5e764"
+    sha256 "ba27c0472706549f83039832d8dc738f5f7a7f90dd02e392bcff2b229809b758"
   end
 
   on_intel do
     url "https://pub-51b22bf3fd5a4d73a4ed580105cfc09f.r2.dev/v#{version}/HubDev-macos-amd64.dmg"
-    sha256 "181dd047ea30f7f7aab0c51668483fb871170389be6bff6c8320ea4134ae223c"
+    sha256 "4c09a9adfb59d88c636984b336543d09f6dfe21756d907b19290bd3cd8e4a917"
   end
 
   name "HubDev"
@@ -20,7 +20,10 @@ cask "hubdev" do
     strategy :header_match
   end
 
-  auto_updates true
+  # No auto_updates flag: HubDev does not silently self-update.
+  # The in-app Update button runs brew upgrade; flagging the
+  # cask auto_updates would make brew upgrade skip it (exit 0,
+  # nothing done) and trap users in a relaunch loop.
   depends_on macos: ">= :catalina"
 
   app "hubdev.app"
